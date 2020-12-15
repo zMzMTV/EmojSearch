@@ -20,4 +20,4 @@ Here you can see and try this project :
 
 https://zmzm-emojisearch.netlify.app/
 
-![](https://media.giphy.com/media/jUwpNzg9IcyrK/giphy.gif)
+![](bye.gif)
