@@ -19,3 +19,5 @@ Just run `yarn` in your console to install all dependencies and `yarn start` to 
 Here you can see and try this project :
 
 https://zmzm-emojisearch.netlify.app/
+
+![](https://media.giphy.com/media/jUwpNzg9IcyrK/giphy.gif)
