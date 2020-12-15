@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Line = ({ emoji }) => {
+  const [hoverLine, setHoverLine] = useState(false);
+
   return (
-    <>
-      <div className="line container" onClick={() => {
-        navigator.clipboard.writeText(emoji.symbol).then(() => {
-          alert("Copied !");
-        })
-      }}>
-      <span >
-      {emoji.symbol} {emoji.title} <p>Click to copy !</p> 
+    <div
+      onMouseEnter={() => setHoverLine(true)}
+      onMouseLeave={() => setHoverLine(false)}
+      onClick={() => {
+        navigator.clipboard.writeText(emoji.symbol);
+      }}
+      className="line"
+    >
+      <span>
+        {emoji.symbol} {emoji.title}
       </span>
-      </div>
-    </>
+      {hoverLine && <p className="copy-span">Click to copy !</p>}
+    </div>
   );
 };
 
